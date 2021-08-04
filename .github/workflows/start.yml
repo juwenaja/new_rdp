@@ -12,13 +12,13 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/rdp/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/rdp/main/wallpaper.png -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/rdp/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/new_rdp/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/new_rdp/main/wallpaper.png -OutFile wallpaper.bmp
+        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/new_rdp/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Mendownload Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/rdp/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/rdp/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/new_rdp/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/juwennn/new_rdp/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
@@ -40,5 +40,5 @@ jobs:
       run: cmd /c start.bat
     - name: Berhasil Dibuat! Anda Bisa Menutup Tab Sekarang.
       run: | 
-        Invoke-WebRequest https://github.com/juwennn/rdp/raw/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://github.com/juwennn/new_rdp/raw/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
